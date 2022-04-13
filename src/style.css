@@ -1,0 +1,141 @@
+/** Add any CSS you need to this file. */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 10px 1px rgba(182, 182, 182, 0.589);
+}
+.heading {
+  display: flex;
+}
+.heading img {
+  height: 35px;
+}
+.contact {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading h2 {
+  font-family: 'Ms Madi', cursive;
+  font-size: 30px;
+  margin-left: 10px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'sidebar content';
+  margin-top: 100px;
+}
+.main .card_contain {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main .card_contain .card {
+  width: 300px;
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+}
+.card .thumb_contain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card img {
+  height: 300px;
+}
+.card .item_title {
+  margin: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.card .price {
+  margin: 20px;
+  font-size: 25px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: green;
+}
+.main .sidebar {
+  padding: 50% 0px 0px 20%;
+  grid-area: sidebar;
+}
+.main .sidebar .side_box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main .sidebar .side_title {
+  font-size: 30px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-bottom: 10px;
+}
+.main .sidebar h4 {
+  font-size: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  cursor: pointer;
+}
+.footer {
+  margin-top: 50px;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+}
+.footer h2 {
+  color: white;
+}
+.sub_form form input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.form_contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.form_contain form {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.form_contain form input {
+  outline: none;
+  padding: 5px;
+}
+.submit_btn {
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+}
+.hide {
+  display: none;
+}
+.contact_title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

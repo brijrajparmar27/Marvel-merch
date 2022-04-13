@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Marvel Merch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Plus+Jakarta+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="heading">
+        <img src="images/logo.png" alt="store logo" class="logo" />
+        <h2 class="heading">Merch</h2>
+      </div>
+
+      <a href="/src/contact.html" class="contact">Contact us</a>
+    </div>
+
+    <div class="form_contain">
+      <form action="https://httpbin.org/post" method="post">
+        <h1 class="contact_title">Contact us</h1>
+        <input type="text" name="fname" id="fname" placeholder="First name" required />
+        <input type="text" name="lname" id="lname" placeholder="Last Name" required />
+        <input type="email" name="email" id="email" placeholder="Email Address" required />
+        <input type="text" name="add" id="add" placeholder="Address" required />
+        <input list="cities" name="city" id="city" placeholder="City Name" required />
+        <datalist id="cities">
+          <option value="Alberta"> </option>
+          <option value="Edmonton"> </option>
+          <option value="British Columbia"> </option>
+          <option value="Victoria"> </option>
+          <option value="Manitoba"> </option>
+          <option value="Winnipeg"> </option>
+          <option value="New Brunswick"> </option>
+          <option value="Fredericton"> </option>
+          <option value="Nova Scotia"> </option>
+          <option value="Halifax"> </option>
+          <option value="Ontario"> </option>
+          <option value="Toronto"> </option>
+          <option value="Prince Edward Island"> </option>
+          <option value="Charlottetown"> </option>
+          <option value="Quebec"> </option>
+          <option value="Quebec City"> </option>
+          <option value="Saskatchewan"> </option>
+          <option value="Regina"> </option>
+          <option value="Yellowknife"> </option>
+        </datalist>
+
+        <input
+          type="text"
+          name="ph"
+          id="ph"
+          placeholder="Phone Number"
+          pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+          required
+        />
+        <input
+          type="text"
+          name="postal"
+          id="postal"
+          placeholder="Postal Code"
+          pattern="^[0-9]*$"
+          required
+        />
+
+        <div>
+          <input type="checkbox" id="callme" name="callme" value="callme" />
+          <label for="callme">i'd Like to be Phoned</label><br />
+        </div>
+
+        <div class="radios">
+          <input type="radio" id="question" name="type" value="question" />
+          <label for="question">Question</label><br />
+          <input type="radio" id="comment" name="type" value="comment" />
+          <label for="comment">Comment</label><br />
+          <input type="radio" id="Other" name="type" value="Other " />
+          <label for="Other ">Other</label>
+        </div>
+        <input type="text" id="other" name="other" class="other hide" placeholder="Specify" />
+        <textarea
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="text" name="hid" id="hid" value="john" hidden />
+        <input type="submit" value="Submit" class="submit_btn" />
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="branding">
+        <div class="heading">
+          <img src="images/logo.png" alt="store logo" class="logo" />
+          <h2>Merch</h2>
+        </div>
+      </div>
+
+      <div class="sub_form">
+        <div class="heading"><h2>Subscribe to out Newsletter</h2></div>
+
+        <form action="https://formspree.io/f/xwkyrbzo" method="post">
+          <input type="email" name="email" id="email" />
+          <input type="submit" value="Subscribe" />
+        </form>
+      </div>
+    </div>
+
+    <script src="/src/form_handler.js"></script>
+  </body>
+</html>
